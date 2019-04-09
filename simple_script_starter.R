@@ -3,6 +3,11 @@ list.of.packages <- c("tidyverse", "devtools","readxl","rio","knitr","dataverse"
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages, repos='http://cran.us.r-project.org')
 install.packages("dataverse")
+install.packages("readxl")
+install.packages("tidyverse")
+install.packages("rio")
+install.packages("knitr")
+
 library(dataverse)
 library(readxl)
 library(tidyverse)
